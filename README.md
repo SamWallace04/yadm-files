@@ -15,7 +15,7 @@
 
 ## Yadm dotfiles
 
-1. Install (yadm)[https://yadm.io/docs/install]
+1. Install [yadm](https://yadm.io/docs/install)
 2. Run the clone command - requires github ssh setup
 
 ```
