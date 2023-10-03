@@ -54,7 +54,7 @@ floating_modifier Mod1
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym Mod1+Return exec tabby
+bindsym Mod1+Return exec kitty 
 
 # kill focused window
 bindsym Mod1+Shift+q kill
@@ -222,3 +222,5 @@ client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcol
 exec_always /home/sam/.config/polybar/launch.sh --forest
 exec_always "setxkbmap -layout us"
 exec_always feh --bg-scale /home/sam/Pictures/Cyberpunk 2077/photomode_27092023_195224.png
+exec --no-startup-id vivaldi
+exec bash /home/sam/.screenlayout/layout.sh
