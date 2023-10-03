@@ -1,6 +1,6 @@
 # My setup
 
-- Distro: Fedora KDE
+- Distro: Arch
 - Shell: ZSH & OMZSH
 - Terminal: [tabby](https://github.com/Eugeny/tabby/tree/master)
 - Windows manager: [i3](https://i3wm.org/downloads/)
@@ -32,6 +32,7 @@ yadm clone git@github.com:SamWallace04/yadm-files.git
 ### Neovim
 
 - Install [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
+- Check lazyvim dependencies [here]([https://www.lazyvim.org](https://www.lazyvim.org/#%EF%B8%8F-requirements))
 - Setup [nvm](https://github.com/nvm-sh/nvm)
 
 ### Misc
