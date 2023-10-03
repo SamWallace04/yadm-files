@@ -219,8 +219,10 @@ client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcol
 #########################################################################
 # Start up scripts
 #########################################################################
+exec_always /home/sam/.screenlayout/layout.sh
 exec_always /home/sam/.config/polybar/launch.sh --forest
 exec_always "setxkbmap -layout us"
 exec_always feh --bg-scale /home/sam/Pictures/Cyberpunk 2077/photomode_27092023_195224.png
-exec --no-startup-id vivaldi
-exec bash /home/sam/.screenlayout/layout.sh
+
+exec_always --no-startup-id vivaldi
+exec_always --no-startup-id discord
