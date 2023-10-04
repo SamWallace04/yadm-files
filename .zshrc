@@ -114,19 +114,29 @@ export PROTON_ENABLE_NGX_UPDATER=1
 alias explorer='explorer.exe .'
 alias v='nvim'
 alias cls='clear'
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias reload="source ~/.zshrc"
+
+#Pacman
+alias pmi='sudo pacman -S'
+alias pmu='sudo pacman -Syu'
+alias pmr='sudo pacman -Rcns'
+alias pms='pacman -Ss'
+
+# Config editing
 alias zshconfig='nvim ~/.zshrc'
 alias vconfig='nvim ~/.config/nvim/'
 alias ssconfig='nvim ~/.config/starship.toml'
 alias i3config='nvim ~/.config/i3/config'
 alias pbconfig='nvim ~/.config/polybar/'
 alias xinitconfig='nvim ~/.xinitrc'
+
+# Dev
 alias ni='npm i'
 alias nb='npm run build:development'
 alias fetch='git fetch --prune'
 alias version='lsb_release -a'
-alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias cb="cargo build"
-alias reload="source ~/.zshrc"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
