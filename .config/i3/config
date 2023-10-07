@@ -214,8 +214,23 @@ client.unfocused        $in-bgcolor     $in-bgcolor     $in-text        $in-bgco
 client.focused_inactive $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
 client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcolor
 
+#########################################################################
+# Custom workspaces and windows 
+#########################################################################
+# Set most steam windows to float
+for_window [class="^steam$" title="^Friends List$"] floating enable resize set 500 900
+for_window [class="^steam$" title="Steam - News"] floating enable
+for_window [class="^steam$" title=".* - Chat"] floating enable
+for_window [class="^steam$" title="^Steam Settings$"] floating enable
+for_window [class="^steam$" title=".* - event started"] floating enable
+for_window [class="^steam$" title=".* CD key"] floating enable
+for_window [class="^steam$" title="^Steam - Self Updater$"] floating enable
+for_window [class="^steam$" title="^Screenshot Uploader$"] floating enable
+for_window [class="^steam$" title="^Steam Guard - Computer Authorization Required$"] floating enable
+for_window [title="^steam Keyboard$"] floating enable
 
-
+# browser pop-ups
+for_window [window_role="pop-up"] floating enable
 
 #########################################################################
 # Start up scripts
