@@ -130,6 +130,7 @@ alias ssconfig='nvim ~/.config/starship.toml'
 alias i3config='nvim ~/.config/i3/config'
 alias pbconfig='nvim ~/.config/polybar/'
 alias xinitconfig='nvim ~/.xinitrc'
+alias kittyconfig='nvim ~/.config/kitty/kitty.conf'
 
 # Dev
 alias ni='npm i'
@@ -138,7 +139,23 @@ alias fetch='git fetch --prune'
 alias version='lsb_release -a'
 alias cb="cargo build"
 
+# Custom functions
+
+# Changes the kitty theme. All options can be seen here: https://github.com/dexpota/kitty-themes/tree/master/themes
+kittytheme() {
+  FILE="$HOME/.config/kitty/kitty-themes/themes/$1.conf"
+
+  if [[ -f "$FILE" ]]; then
+   rm ~/.config/kitty/theme.conf
+   ln -s "$FILE" ~/.config/kitty/theme.conf
+   echo "Theme changed."
+  else
+   echo "Theme does not exist."
+  fi
+}
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+eval $(thefuck --alias)
