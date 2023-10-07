@@ -194,6 +194,7 @@ bindsym Mod1+r mode "resize"
 # Custom binds
 #########################################################################
 bindsym Mod1+d exec ~/.config/polybar/forest/scripts/launcher.sh
+bindsym Mod1+Tab exec ~/.config/polybar/forest/scripts/rofi-switch.sh
 
 
 
@@ -219,10 +220,12 @@ client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcol
 #########################################################################
 # Start up scripts
 #########################################################################
-exec_always /home/sam/.screenlayout/layout.sh
-exec_always /home/sam/.config/polybar/launch.sh --forest
-exec_always "setxkbmap -layout us"
-exec_always feh --bg-scale /home/sam/Pictures/Cyberpunk 2077/photomode_27092023_195224.png
+exec_always --no-startup-id /home/sam/.screenlayout/layout.sh
+exec_always --no-startup-id /home/sam/.config/polybar/launch.sh --forest
+exec_always --no-startup-id "setxkbmap -layout us"
+exec_always --no-startup-id feh --bg-fill /home/sam/Pictures/Cyberpunk2077/photomode_26092022_205840.png
 
-exec_always --no-startup-id vivaldi
-exec_always --no-startup-id discord
+exec --no-startup-id remotemouse
+exec --no-startup-id /opt/vivaldi/vivaldi
+exec --no-startup-id discord
+exec --no-startup-id steam
