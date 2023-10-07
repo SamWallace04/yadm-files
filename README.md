@@ -2,7 +2,7 @@
 
 - Distro: Arch
 - Shell: ZSH & OMZSH
-- Terminal: [tabby](https://github.com/Eugeny/tabby/tree/master)
+- Terminal: [kitty](https://sw.kovidgoyal.net/kitty/)
 - Windows manager: [i3](https://i3wm.org/downloads/)
 - File manager: [Thunar](https://wiki.archlinux.org/title/Thunar)
 
