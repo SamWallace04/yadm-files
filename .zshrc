@@ -116,6 +116,7 @@ alias v='nvim'
 alias cls='clear'
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias reload="source ~/.zshrc"
+alias sysinfo="neofetch"
 
 #Pacman
 alias pmi='sudo pacman -S'
@@ -128,6 +129,8 @@ alias zshconfig='nvim ~/.zshrc'
 alias vconfig='nvim ~/.config/nvim/'
 alias ssconfig='nvim ~/.config/starship.toml'
 alias i3config='nvim ~/.config/i3/config'
+alias hyprconfig='nvim ~/.config/hypr/'
+alias wbconfig='nvim ~/.config/waybar/'
 alias pbconfig='nvim ~/.config/polybar/'
 alias xinitconfig='nvim ~/.xinitrc'
 alias kittyconfig='nvim ~/.config/kitty/kitty.conf'
