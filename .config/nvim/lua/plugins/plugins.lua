@@ -16,4 +16,13 @@ return {
       disable_mouse = false,
     },
   },
+  {
+    "rcarriga/nvim-notify",
+    opts = {
+      background_colour = "#000000",
+    },
+  },
+  {
+    "gpanders/nvim-parinfer",
+  },
 }

@@ -9,7 +9,9 @@ return {
       no_italic = true,
     },
   },
-  { "sekke276/dark_flat.nvim" },
+  { "sekke276/dark_flat.nvim", opts = {
+    transparent = true,
+  } },
 
   -- Configure LazyVim to load gruvbox
   {
