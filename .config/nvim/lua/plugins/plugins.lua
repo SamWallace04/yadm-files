@@ -22,7 +22,6 @@ return {
       background_colour = "#000000",
     },
   },
-  {
-    "gpanders/nvim-parinfer",
-  },
+  { "gpanders/nvim-parinfer" },
+  { "luckasRanarison/tree-sitter-hypr" },
 }
