@@ -3,7 +3,8 @@
 - Distro: Arch
 - Shell: ZSH & OMZSH
 - Terminal: [kitty](https://sw.kovidgoyal.net/kitty/)
-- Windows manager: [i3](https://i3wm.org/downloads/)
+- DE: [Hyprland](https://hyprland.org)
+- WM: [sway](https://swaywm.org)
 - File manager: [Thunar](https://wiki.archlinux.org/title/Thunar)
 
 ### ZSH & OMZSH
