@@ -14,6 +14,10 @@
 - Install [zoxide](https://github.com/ajeetdsouza/zoxide)
 - Install [zsh auto suggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone) via the manual git clone method
 
+## Hyprland
+
+Config adapted from [late night dotfiles](https://github.com/1amSimp1e/dots/tree/late-night-%F0%9F%8C%83)
+
 ## Yadm dotfiles
 
 1. Install [yadm](https://yadm.io/docs/install)
