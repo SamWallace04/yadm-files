@@ -1,41 +1,45 @@
 #!/usr/bin/env bash
 
+## Author : Aditya Shakya (adi1090x)
+## Github : @adi1090x
+#
+## Rofi   : Power Menu
+#
+## Available Styles
+#
+## style-1   style-2   style-3   style-4   style-5
+
 # Current Theme
-dir="~/.config/rofi"
-theme='/power'
+dir="$HOME/.config/rofi/powermenu/type-3"
+theme='style-1'
 
 # CMDs
-uptime="$(uptime -p | sed -e 's/up //g')"
-host=$(cat /etc/hostname)
+uptime="`uptime -p | sed -e 's/up //g'`"
+host=`hostname`
 
 # Options
-shutdown=' Shutdown'
-reboot=' Reboot'
-lock=' Lock'
-suspend='  Suspend'
-logout='  Logout'
-yes='וֹ Yes'
-no='תּ No'
+shutdown=''
+reboot=''
+lock=''
+suspend=''
+logout=''
+yes=''
+no=''
 
 # Rofi CMD
 rofi_cmd() {
 	rofi -dmenu \
-		-p "$host" \
+		-p "Uptime: $uptime" \
 		-mesg "Uptime: $uptime" \
 		-theme ${dir}/${theme}.rasi
 }
 
 # Confirmation CMD
 confirm_cmd() {
-	rofi -theme-str 'window {location: center; anchor: center; fullscreen: false; width: 250px;}' \
-		-theme-str 'mainbox {children: [ "message", "listview" ];}' \
-		-theme-str 'listview {columns: 2; lines: 1;}' \
-		-theme-str 'element-text {horizontal-align: 0.5;}' \
-		-theme-str 'textbox {horizontal-align: 0.5;}' \
-		-dmenu \
+	rofi -dmenu \
 		-p 'Confirmation' \
 		-mesg 'Are you Sure?' \
-		-theme ${dir}/${theme}.rasi
+		-theme ${dir}/shared/confirm.rasi
 }
 
 # Ask for confirmation
@@ -69,8 +73,6 @@ run_cmd() {
 				i3-msg exit
 			elif [[ "$DESKTOP_SESSION" == 'plasma' ]]; then
 				qdbus org.kde.ksmserver /KSMServer logout 0 0 0
-			elif [[ "$DESKTOP_SESSION" == 'Hyprland' ]]; then
-				hyprctl dispatch exit 1
 			fi
 		fi
 	else
@@ -81,25 +83,23 @@ run_cmd() {
 # Actions
 chosen="$(run_rofi)"
 case ${chosen} in
-$shutdown)
-	run_cmd --shutdown
-	;;
-$reboot)
-	run_cmd --reboot
-	;;
-$lock)
-	if [[ -x '/usr/bin/betterlockscreen' ]]; then
-		betterlockscreen -l
-	elif [[ -x '/usr/bin/i3lock' ]]; then
-		i3lock
-	elif [[ -x '/usr/bin/Hyprland' ]]; then
-		swaylock
-	fi
-	;;
-$suspend)
-	run_cmd --suspend
-	;;
-$logout)
-	run_cmd --logout
-	;;
+    $shutdown)
+		run_cmd --shutdown
+        ;;
+    $reboot)
+		run_cmd --reboot
+        ;;
+    $lock)
+		if [[ -x '/usr/bin/betterlockscreen' ]]; then
+			betterlockscreen -l
+		elif [[ -x '/usr/bin/i3lock' ]]; then
+			i3lock
+		fi
+        ;;
+    $suspend)
+		run_cmd --suspend
+        ;;
+    $logout)
+		run_cmd --logout
+        ;;
 esac

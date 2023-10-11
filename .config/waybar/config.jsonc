@@ -146,7 +146,7 @@
   },
   "custom/launcher": {
     "format": "󰈸",
-    "on-click": "rofi -show drun",
-    "on-click-right": "bash ~/.config/waybar/scripts/power-menu/powermenu.sh"
+    "on-click": "bash $HOME/.config/rofi/launchers/type-5/launcher.sh",
+    "on-click-right": "bash $HOME/.config/rofi/powermenu/type-4/powermenu.sh"
   }
 }
