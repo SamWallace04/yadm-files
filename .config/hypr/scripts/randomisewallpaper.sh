@@ -32,6 +32,9 @@ while true; do
 		done |
 		sort -n | cut -d':' -f2- |
 		while read -r img; do
+			# if [ "$img" == "/home/sam/Pictures/Wallpapers/Cyberpunk/edgerunnersmoon.png" ]; then
+			# 	play "~/Music/IRWTSAYH.mp3"
+			# fi
 			swaybg -o \* -i "$img" -m fill &
 			sleep $INTERVAL
 		done
