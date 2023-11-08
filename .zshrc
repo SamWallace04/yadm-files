@@ -146,7 +146,7 @@ alias cb="cargo build"
 
 # Changes the kitty theme. All options can be seen here: https://github.com/dexpota/kitty-themes/tree/master/themes
 kittytheme() {
-  FILE="$HOME/.config/kitty/kitty-themes/themes/$1.conf"
+  FILE="$HOME/.config/kitty/themes/$1.conf"
 
   if [[ -f "$FILE" ]]; then
    rm ~/.config/kitty/theme.conf

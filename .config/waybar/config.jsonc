@@ -39,7 +39,7 @@
       //			"4": "四",
       //			"5": "五",
       "urgent": "",
-      "active": "",
+      "active": "<span color=\"#f2cdcd\"></span>",
       "default": "󰧞",
       "sort-by-number": true
     }
@@ -149,7 +149,7 @@
     "on-click-right": "bash $HOME/.config/hypr/wall.sh"
   },
   "custom/launcher": {
-    "format": "󰣇",
+    "format": "<span color=\"#89dceb\">󰣇</span>",
     "on-click": "bash $HOME/.config/rofi/launchers/type-5/launcher.sh",
     "on-click-right": "bash $HOME/.config/rofi/powermenu/type-4/powermenu.sh"
   }
