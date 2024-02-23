@@ -2,7 +2,7 @@
 
 - Distro: Arch
 - Shell: ZSH & OMZSH
-- Terminal: [kitty](https://sw.kovidgoyal.net/kitty/)
+- Terminal: [warp](https://www.warp.dev)
 - DE: [Hyprland](https://hyprland.org)
 - WM: [sway](https://swaywm.org)
 - File manager: [Thunar](https://wiki.archlinux.org/title/Thunar)
@@ -17,6 +17,16 @@
 ## Hyprland
 
 Config adapted from [late night dotfiles](https://github.com/1amSimp1e/dots/tree/late-night-%F0%9F%8C%83)
+
+### Hyprpm
+
+Install dependencies from pacman:
+- cpio
+- meson
+- cmake
+
+Plugins:
+- [hy3](github.com/outfoxxed/hy3)
 
 ## Yadm dotfiles
 
@@ -45,3 +55,4 @@ yadm clone git@github.com:SamWallace04/yadm-files.git
 - Install [cargo](https://www.rust-lang.org/tools/install)
 - Install [polybar](https://github.com/polybar/polybar?tab=readme-ov-file#installation)
 - Install [rofi](https://github.com/davatorium/rofi/blob/next/INSTALL.md)
+- Install [paru](https://github.com/Morganamilo/paru)
