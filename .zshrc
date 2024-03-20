@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 path+=('/home/sam/.local/bin')
-path=('/home/david/pear/bin' $path)
+path+=('/home/sam/.nix-profile/bin')
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
  export ZSH="$HOME/.oh-my-zsh"
@@ -75,7 +75,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases git nvm npm rust tmux)
+plugins=(aliases git nvm npm rust tmux eza)
 
 # Comment in/out for omzsh
  source $ZSH/oh-my-zsh.sh
@@ -102,6 +102,7 @@ export PROTON_HIDE_NVIDIA_GPU=0
 export PROTON_ENABLE_NVAPI=1
 export VKD3D_CONFIG=dxr,dxr11
 export PROTON_ENABLE_NGX_UPDATER=1
+export WARP_ENABLE_WAYLAND=1
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -143,19 +144,6 @@ alias version='lsb_release -a'
 alias cb="cargo build"
 
 # Custom functions
-
-# Changes the kitty theme. All options can be seen here: https://github.com/dexpota/kitty-themes/tree/master/themes
-kittytheme() {
-  FILE="$HOME/.config/kitty/themes/$1.conf"
-
-  if [[ -f "$FILE" ]]; then
-   rm ~/.config/kitty/theme.conf
-   ln -s "$FILE" ~/.config/kitty/theme.conf
-   echo "Theme changed."
-  else
-   echo "Theme does not exist."
-  fi
-}
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

@@ -21,6 +21,8 @@ vim.keymap.set("n", "<F3>", function()
   vim.cmd("noh")
 end)
 
+-- Delete and paste without losing register.
+vim.keymap.set("v", "<leader>p", '"_dP')
 -- Harpoon remaps
 local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
@@ -40,9 +42,5 @@ end)
 vim.keymap.set("n", "<C-s>", function()
   ui.nav_file(4)
 end)
-
--- Cellular Automatic
-vim.keymap.set("n", "<leader>mir", "<cmd>CellularAutomaton make_it_rain<CR>")
-vim.keymap.set("n", "<leader>gol", "<cmd>CellularAutomaton game_of_life<CR>")
 
 vim.keymap.set("n", "<leader>tt", "<Cmd>Neotree toggle<CR>")
