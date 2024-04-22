@@ -1,4 +1,4 @@
-@import "mocha.css";
+@import "themes/cyberpunk.css";
 
 * {
   border: none;
@@ -10,36 +10,65 @@
   font-size: 14px;
   font-style: normal;
   min-height: 0;
-  color: @text;
+  color: @black;
 }
 
 window#waybar {
-  background-color: alpha(@base, 0.3);
+  background-color: alpha(@purple, 0.4);
 }
 
-#custom-date,
-#clock,
-#cpu,
-#disk,
-#memory,
-#battery,
-#pulseaudio,
-#tray,
-#network,
-#window,
-#workspaces,
-#custom-randwall,
-#custom-launcher {
-  background: @surface0;
-  border-radius: 16px;
-  margin: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 5px 12px 5px 12px;
+/* Available modules */
+/* #custom-date, */
+/* #clock, */
+/* #cpu, */
+/* #disk, */
+/* #memory, */
+/* #battery, */
+/* #pulseaudio, */
+/* #tray, */
+/* #network, */
+/* #window, */
+/* #workspaces, */
+/* #custom-randwall, */
+/* #custom-launcher */
+
+.module {
+  background: @yellow;
+  border: none;
+  border-radius: 0%;
+  letter-spacing: 2px;
   font-weight: bold;
+  padding: 5px 12px 5px 12px;
+  margin: 5px;
+  color: #000;
+  outline: none;
 }
 
-#workspaces {
+.modules-left .module {
+  border-right: 5px solid @neon;
+}
+
+.modules-right .module {
+  border-left: 5px solid @neon;
+}
+
+.modules-center .module {
+  border-right: 5px solid @neon;
+  border-left: 5px solid @neon;
+}
+
+#custom-launcher,
+#clock {
+  background: @purple;
+}
+
+#window {
+  background: @red;
+}
+
+#tray {
+  background: @blue;
+  color: #fff;
 }
 
 #workspaces button {
@@ -49,11 +78,6 @@ window#waybar {
 
 #workspaces button.active {
   background-color: transparent;
-  border-radius: 16px;
-}
-
-#workspaces button:hover {
-  background-color: alpha(@flamingo, 0.3);
   border-radius: 16px;
 }
 
@@ -74,15 +98,16 @@ window#waybar {
 }
 
 #pulseaudio.muted {
-  background: transparent;
-  color: #928374;
-  border-radius: 8px;
-  margin-left: 0px;
+  color: @red;
 }
 
 #custom-launcher {
   border-radius: 0px 0px 24px 0px;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 10px 0px 0px;
   padding: 0 20px 0 13px;
   font-size: 20px;
+}
+
+.calendar {
+  background: @purple;
 }

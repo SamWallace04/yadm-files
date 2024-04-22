@@ -1,0 +1,15 @@
+file_path=~/wallpapers/Cyberpunk/
+
+# Sets the primary monitor to DP-1
+lock_bar_monitor=primary
+lock_indicator_monitor=primary
+monitor_primary=DP-1
+
+# Only shows the lock indicator on the primary monitor
+lock_indicator_monitor=primary
+
+# keeps the videos in the same order across multiple monitors
+file_keep_same_order=true
+
+lock_indicator_visible_on_idle=true
+lock_bar_visible_on_idle=true

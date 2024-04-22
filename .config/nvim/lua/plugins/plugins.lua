@@ -1,9 +1,7 @@
 -- For one liner installs with no additional config.
 return {
   { "ThePrimeagen/harpoon" },
-  { "eandrju/cellular-automaton.nvim" },
   { "HiPhish/nvim-ts-rainbow2" },
-  { "ThePrimeagen/vim-be-good" },
   {
     "aserowy/tmux.nvim",
     config = function()
@@ -23,5 +21,5 @@ return {
     },
   },
   { "gpanders/nvim-parinfer" },
-  { "luckasRanarison/tree-sitter-hypr" },
+  { "github/copilot.vim" },
 }

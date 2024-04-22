@@ -17,6 +17,9 @@ return {
     --   transparent = true,
     -- }
   },
+  { dir = "~/dev/cyberpunk.nvim", opts = {
+    transparent = true,
+  } },
 
   -- Configure LazyVim to load gruvbox
   {

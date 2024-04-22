@@ -21,12 +21,18 @@ Config adapted from [late night dotfiles](https://github.com/1amSimp1e/dots/tree
 ### Hyprpm
 
 Install dependencies from pacman:
+
 - cpio
 - meson
 - cmake
 
 Plugins:
+
 - [hy3](github.com/outfoxxed/hy3)
+
+### Other programs
+
+- [hypridle](https://github.com/hyprwm/hypridle)
 
 ## Yadm dotfiles
 
