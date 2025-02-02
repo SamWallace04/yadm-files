@@ -17,6 +17,10 @@ window#waybar {
   background-color: alpha(@purple, 0.4);
 }
 
+tooltip {
+  background-color: @purple;
+}
+
 /* Available modules */
 /* #custom-date, */
 /* #clock, */
