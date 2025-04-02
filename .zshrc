@@ -98,11 +98,10 @@ plugins=(aliases git nvm npm rust tmux eza)
 # export ARCHFLAGS="-arch x86_64"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-export PROTON_HIDE_NVIDIA_GPU=0
-export PROTON_ENABLE_NVAPI=1
 export VKD3D_CONFIG=dxr,dxr11
 export PROTON_ENABLE_NGX_UPDATER=1
 export WARP_ENABLE_WAYLAND=1
+export ENABLE_GAMESCOPE_WSI=1
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh

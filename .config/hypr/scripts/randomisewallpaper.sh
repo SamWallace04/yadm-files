@@ -3,21 +3,21 @@
 # This script will randomly go through the files of a directory, setting it
 # up as the wallpaper at regular intervals
 if [[ $# -lt 1 ]] || [[ ! -d $1 ]]; then
-	echo "Usage:
+  echo "Usage:
 	$0 <dir containing images>"
-	exit 1
+  exit 1
 fi
 
 # Kill any other scripts running
 kill_others() {
-	local mypid=$$ # capture this run's pid
+  local mypid=$$ # capture this run's pid
 
-	for pid in $( # cycle through all pids except this one
-		pgrep -f randomisewallpaper.sh
-	); do
-		[[ $pid -ne $mypid ]] && kill $pid # kill the other pids
-		sleep 1                            # give time to complete
-	done
+  for pid in $( # cycle through all pids except this one
+    pgrep -f randomisewallpaper.sh
+  ); do
+    [[ $pid -ne $mypid ]] && kill $pid # kill the other pids
+    sleep 1                            # give time to complete
+  done
 }
 
 kill_others
@@ -26,16 +26,14 @@ kill_others
 INTERVAL=300
 
 while true; do
-	find "$1" |
-		while read -r img; do
-			echo "$((RANDOM % 1000)):$img"
-		done |
-		sort -n | cut -d':' -f2- |
-		while read -r img; do
-			# if [ "$img" == "/home/sam/Pictures/Wallpapers/Cyberpunk/edgerunnersmoon.png" ]; then
-			# 	play "~/Music/IRWTSAYH.mp3"
-			# fi
-			swaybg -o \* -i "$img" -m fill &
-			sleep $INTERVAL
-		done
+  find "$1" |
+    while read -r img; do
+      echo "$((RANDOM % 1000)):$img"
+    done |
+    sort -n | cut -d':' -f2- |
+    while read -r img; do
+      #swaybg -o \* -i "$img" -m fill &
+      swww img "$img"
+      sleep $INTERVAL
+    done
 done
