@@ -41,7 +41,7 @@ window {
     padding:                     0px;
     border-radius:               10px;
     cursor:                      "default";
-    background-color:            rgba(20,21,30, 0.3);
+    background-color:            rgba(20,21,30, 0.7);
 }
 
 /*****----- Main Box -----*****/
@@ -119,16 +119,16 @@ element {
     cursor:                      pointer;
 }
 element normal.active {
-    background-image:            linear-gradient(to right, #19B466, #7BF4B7);
+    background-image:            linear-gradient(to right, #7BF4B7, #a6e3a1);
     text-color:                  black;
 }
 element selected.normal {
     border-radius:               10px;
-    background-color: #e6b9c6;
+    background-color: #9399b2;
     text-color:                  black;
 }
 element selected.active {
-    background-color: #e6b9c6;
+    background-color: #9399b2;
     text-color:                  black;
 }
 element-icon {
@@ -155,12 +155,12 @@ button {
     font:                        "Iosevka Nerd Font Bold 10";
     padding:                     10px;
     border-radius:               100%;
-    background-image:            linear-gradient(to right, #C03FF2, #EEC2FF);
+    background-image:            linear-gradient(to right, #313244, #585b70);
     text-color:                  white;
     cursor:                      pointer;
 }
 button selected {
-    background-image:            linear-gradient(to right, #44A2F0, #BDDDF8);
+    background-image:            linear-gradient(to right, #89b4fa, #BDDDF8);
     text-color:                  black;
 }
 

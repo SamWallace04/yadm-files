@@ -1,4 +1,4 @@
-@import "themes/cyberpunk.css";
+@import "themes/mocha.css";
 
 * {
   border: none;
@@ -14,11 +14,11 @@
 }
 
 window#waybar {
-  background-color: alpha(@purple, 0.4);
+  background-color: alpha(@base, 0.4);
 }
 
 tooltip {
-  background-color: @purple;
+  background-color: @overlay0;
 }
 
 /* Available modules */
@@ -37,41 +37,28 @@ tooltip {
 /* #custom-launcher */
 
 .module {
-  background: @yellow;
-  border: none;
-  border-radius: 0%;
+  background: @surface0;
+  border: solid 1px @surface1;
+  border-radius: 16px;
   letter-spacing: 2px;
   font-weight: bold;
   padding: 5px 12px 5px 12px;
   margin: 5px;
-  color: #000;
+  color: #fff;
   outline: none;
-}
-
-.modules-left .module {
-  border-right: 5px solid @neon;
-}
-
-.modules-right .module {
-  border-left: 5px solid @neon;
-}
-
-.modules-center .module {
-  border-right: 5px solid @neon;
-  border-left: 5px solid @neon;
 }
 
 #custom-launcher,
 #clock {
-  background: @purple;
+  background: @surface1;
 }
 
 #window {
-  background: @red;
+  background: @surface1;
 }
 
 #tray {
-  background: @blue;
+  background: @surface0;
   color: #fff;
 }
 
@@ -113,5 +100,5 @@ tooltip {
 }
 
 .calendar {
-  background: @purple;
+  background: @overlay0;
 }
