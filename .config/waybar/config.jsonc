@@ -6,16 +6,9 @@
   "margin-bottom": 0,
   "margin-left": 0,
   "margin-right": 0,
-  "modules-left": [
-    "custom/launcher",
-    "hyprland/workspaces",
-    "cpu",
-    "memory",
-    "disk",
-    "disk#data",
-  ],
-  "modules-center": ["hyprland/window"],
-  "modules-right": ["tray", "network", "pulseaudio", "clock"],
+  "modules-left": ["cpu", "memory", "disk", "disk#data"],
+  "modules-center": ["hyprland/workspaces", "clock", "custom/launcher"],
+  "modules-right": ["tray", "network", "pulseaudio"],
   // Modules configuration
   "clock": {
     "format": " {:%H:%M}",
