@@ -6,7 +6,7 @@
   "margin-bottom": 0,
   "margin-left": 0,
   "margin-right": 0,
-  "modules-left": ["cpu", "memory", "disk", "disk#data"],
+  "modules-left": ["cpu", "memory", "disk", "disk#data", "disk#data2"],
   "modules-center": ["hyprland/workspaces", "clock", "custom/launcher"],
   "modules-right": ["tray", "network", "pulseaudio"],
   // Modules configuration
@@ -80,6 +80,13 @@
     "format-alt": " {}%",
     "interval": 5,
     "path": "/media/data/",
+  },
+
+  "disk#data2": {
+    "format": " {free}",
+    "format-alt": " {}%",
+    "interval": 5,
+    "path": "/media/data2/",
   },
 
   "network": {

@@ -115,6 +115,10 @@ alias v='nvim'
 alias cls='clear'
 alias reload="source ~/.zshrc"
 
+# Drop in replacements
+alias ls="eza"
+alias cat="bat"
+
 #Pacman
 alias pmi='sudo pacman -S'
 alias pmu='sudo pacman -Syu'
@@ -139,7 +143,8 @@ alias cb="cargo build"
 # Custom functions
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[[ "$TERM_PROGRAM" == "vscode" ]] && unset ARGV0
 
-#eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval $(thefuck --alias)

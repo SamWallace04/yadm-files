@@ -33,7 +33,7 @@ while true; do
     sort -n | cut -d':' -f2- |
     while read -r img; do
       #swaybg -o \* -i "$img" -m fill &
-      swww img "$img"
+      awww img "$img"
       sleep $INTERVAL
     done
 done
