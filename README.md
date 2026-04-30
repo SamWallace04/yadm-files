@@ -2,9 +2,8 @@
 
 - Distro: Arch
 - Shell: ZSH & OMZSH
-- Terminal: [warp](https://www.warp.dev)
+- Terminal: [ghostty](https://ghostty.org/)
 - DE: [Hyprland](https://hyprland.org)
-- WM: [sway](https://swaywm.org)
 - File manager: [Thunar](https://wiki.archlinux.org/title/Thunar)
 
 ### ZSH & OMZSH
@@ -15,8 +14,6 @@
 - Install [zsh auto suggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone) via the manual git clone method
 
 ## Hyprland
-
-Config adapted from [late night dotfiles](https://github.com/1amSimp1e/dots/tree/late-night-%F0%9F%8C%83)
 
 ### Hyprpm
 
@@ -59,6 +56,7 @@ yadm clone git@github.com:SamWallace04/yadm-files.git
 ### Misc
 
 - Install [cargo](https://www.rust-lang.org/tools/install)
-- Install [polybar](https://github.com/polybar/polybar?tab=readme-ov-file#installation)
+- Install [waybar](https://github.com/Alexays/Waybar)
 - Install [rofi](https://github.com/davatorium/rofi/blob/next/INSTALL.md)
 - Install [paru](https://github.com/Morganamilo/paru)
+- Install [awww](https://codeberg.org/LGFae/awww) for wallpaper
