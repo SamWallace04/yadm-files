@@ -31,6 +31,10 @@ Plugins:
 
 - [hypridle](https://github.com/hyprwm/hypridle)
 
+## Quickshell
+
+- Install [Noctalia shell](https://docs.noctalia.dev/v4/getting-started/installation/)
+
 ## Yadm dotfiles
 
 1. Install [yadm](https://yadm.io/docs/install)
