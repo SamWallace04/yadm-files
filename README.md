@@ -1,17 +1,32 @@
 # My setup
 
+<!--toc:start-->
+- [My setup](#my-setup)
+  - [ZSH and OMZSH](#zsh-and-omzsh)
+  - [Hyprland](#hyprland)
+    - [Hyprpm](#hyprpm)
+    - [Other programs](#other-programs)
+  - [Quickshell](#quickshell)
+  - [Yadm dotfiles](#yadm-dotfiles)
+  - [Other setup steps](#other-setup-steps)
+    - [Tmux](#tmux)
+    - [Neovim](#neovim)
+    - [Misc](#misc)
+<!--toc:end-->
+
 - Distro: Arch
 - Shell: ZSH & OMZSH
 - Terminal: [ghostty](https://ghostty.org/)
 - DE: [Hyprland](https://hyprland.org)
 - File manager: [Thunar](https://wiki.archlinux.org/title/Thunar)
 
-## ZSH & OMZSH
+## ZSH and OMZSH
 
 - Install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 - Install [omzsh](https://ohmyz.sh) via curl
 - Install [zoxide](https://github.com/ajeetdsouza/zoxide)
-- Install [zsh auto suggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone) via the manual git clone method
+- Install [zsh auto suggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#manual-git-clone)
+via the manual git clone method
 
 ## Hyprland
 
@@ -54,13 +69,17 @@ yadm clone git@github.com:SamWallace04/yadm-files.git
 ### Neovim
 
 - Install [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)
-- Check lazyvim dependencies [here](https://www.lazyvim.org/#%EF%B8%8F-requirements)
+- Check [lazyvim](https://www.lazyvim.org/#%EF%B8%8F-requirements) dependencies
 - Setup [nvm](https://github.com/nvm-sh/nvm)
 
 ### Misc
 
 - Install [cargo](https://www.rust-lang.org/tools/install)
-- Install [waybar](https://github.com/Alexays/Waybar) - Not currently used with noctalia shell.
-- Install [rofi](https://github.com/davatorium/rofi/blob/next/INSTALL.md) - Not currently used with noctalia shell.
+- Install [waybar](https://github.com/Alexays/Waybar)
+Not currently used with noctalia shell.
+- Install [rofi](https://github.com/davatorium/rofi/blob/next/INSTALL.md)
+Not currently used with noctalia shell.
 - Install [paru](https://github.com/Morganamilo/paru)
-- Install [linux wallpaper engine](https://github.com/Almamu/linux-wallpaperengine) and the [ui](https://github.com/jagrat7/linux-wallpaper-engine) for wallpapers. (Requires wallpaper engine on steam installed on `/`.
+- Install [linux wallpaper engine](https://github.com/Almamu/linux-wallpaperengine)
+and the [ui](https://github.com/jagrat7/linux-wallpaper-engine) for wallpapers.
+(Requires wallpaper engine on steam installed on `/`.
