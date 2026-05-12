@@ -6,7 +6,7 @@
 - DE: [Hyprland](https://hyprland.org)
 - File manager: [Thunar](https://wiki.archlinux.org/title/Thunar)
 
-### ZSH & OMZSH
+## ZSH & OMZSH
 
 - Install [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 - Install [omzsh](https://ohmyz.sh) via curl
@@ -60,7 +60,7 @@ yadm clone git@github.com:SamWallace04/yadm-files.git
 ### Misc
 
 - Install [cargo](https://www.rust-lang.org/tools/install)
-- Install [waybar](https://github.com/Alexays/Waybar)
-- Install [rofi](https://github.com/davatorium/rofi/blob/next/INSTALL.md)
+- Install [waybar](https://github.com/Alexays/Waybar) - Not currently used with noctalia shell.
+- Install [rofi](https://github.com/davatorium/rofi/blob/next/INSTALL.md) - Not currently used with noctalia shell.
 - Install [paru](https://github.com/Morganamilo/paru)
-- Install [awww](https://codeberg.org/LGFae/awww) for wallpaper
+- Install [linux wallpaper engine](https://github.com/Almamu/linux-wallpaperengine) and the [ui](https://github.com/jagrat7/linux-wallpaper-engine) for wallpapers. (Requires wallpaper engine on steam installed on `/`.
