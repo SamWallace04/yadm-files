@@ -2,6 +2,7 @@
 
 <!--toc:start-->
 - [My setup](#my-setup)
+  - [Core](#core)
   - [ZSH and OMZSH](#zsh-and-omzsh)
   - [Hyprland](#hyprland)
     - [Hyprpm](#hyprpm)
@@ -13,6 +14,8 @@
     - [Neovim](#neovim)
     - [Misc](#misc)
 <!--toc:end-->
+
+## Core
 
 - Distro: Arch
 - Shell: ZSH & OMZSH
